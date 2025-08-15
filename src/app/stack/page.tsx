@@ -1,7 +1,7 @@
-import React from 'react'
-
-export default function Stack() {
+export default function Home() {
   return (
-    <div>Stack</div>
-  )
+    <main className="mt-20">
+     
+    </main>
+  );
 }
