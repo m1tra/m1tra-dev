@@ -3,7 +3,6 @@ import Background from '../ui/background'
 
 export default function Info() {
   return (
-    
     <div className='border font-mono p-5 space-y-10 '>
         <h1 className='text-6xl font-bold'>I design products that people love</h1>
         <p className='text-xl text-gray-500'>M1tra is a full-stack developer based in Saint-Petersburg, helping startups build beautiful, usable software fast. He combines clean code, intuitive UX, and creativity to turn ideas into products people enjoy.</p>

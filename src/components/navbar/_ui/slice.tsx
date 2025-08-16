@@ -5,7 +5,7 @@ import Background from "@/components/ui/background"
 
 export default function Slice({ href, title, icon: Icon, color }: SliceProps) {
   return (
-    <Link href={href}>
+    <Link href={href} className="">
       <Background
         className="h-full pb-20 pt-10 w-25 flex justify-between flex-col-reverse items-center"
         color={color}
