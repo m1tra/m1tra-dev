@@ -10,21 +10,21 @@ const HomeSlice: SliceProps = {
   href: "/",
   title: "Home",
   icon: House,
-  color: "#06b6d4, #3b82f6, #9333ea",
+  color: "bg-green-300",
 }
 
 const ProjectSlice: SliceProps = {
   href: "/projects",
   title: "Projects",
   icon: FolderKanban,
-  color: "#ec4899, #8b5cf6, #f97316",
+  color: "bg-green-300",
 }
 
 const StackSlice: SliceProps = {
   href: "/stack",
   title: "Stack",
   icon: Layers,
-  color: "#f59e0b, #3b82f6, #10b981",
+  color: "bg-green-300",
 }
 
 type SliceLogicProps = {

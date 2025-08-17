@@ -1,60 +1,50 @@
-import ButtonDemo from "@/components/components-page/_ui/button-demo";
-import { NeoBrutalButton } from "@/components/ui/button";
-import {Card} from "@/components/ui/card";
 
 
-
-const CardMockData =   {
-    color: "#a78bfa, #f472b6, #22d3ee",
-    title: "Frontend Development",
-    subtitle: "React, Next.js, Astro",
-    description: "Building responsive, accessible, and high-performance user interfaces with modern frameworks and clean design principles.",
-  }
-  
-
-
+import CasualButton from "@/components/ui/brutal-ui/button";
+import { ArrowRight } from "lucide-react";
+import NavBar from "@/components/components-page/navbar";
+import Card from "@/components/ui/brutal-ui/card";
+import ProjectProgress from "@/components/ui/examples/project-progress";
 
 
   
 export default function Home() {
   return (
-    <main className="pt-30 px-30 font-mono min-h-screen ">
-      <section className="space-y-10">
-        <div className="space-y-10">
-          <h1 className="text-6xl font-bold text-white">The Foundation for your Design System</h1>
-          <p className="text-gray-500 text-3xl" >A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.</p>
+    <main className="pt-20 px-30  min-h-screen ">
+      <section className="gap-15 flex items-center flex-col ">
+        <div className="gap-5 flex items-center flex-col">
+          <div className="font-bold px-3 py-2 bg-black text-white -rotate-1 inline-block  text-sm hover:translate-x-2 duration-150">NEW BRUTAL COMPONENT →</div>
+          <div className="space-y-10 text-center flex flex-col items-center max-w-6xl">
+            <h1 className="text-6xl font-black mb-6 leading-none">
+              THE FOUNDATION FOR YOUR{" "}
+              <span className="bg-yellow-400 px-2  inline-block rotate-1">DESIGN SYSTEM</span>
+            </h1>
+            <p className="text-black text-xl font-extrabold max-w-5xl  " >A set of BRUTALLY designed components that you can customize, extend, and build on. Start here then make it your own. OPEN SOURCE. OPEN CODE.</p>
+          </div>
+          <div className="flex">
+            <CasualButton className={"uppercase"} variant="default">Get Started</CasualButton>
+            <CasualButton className={"uppercase flex items-center gap-1"} >View components<ArrowRight/></CasualButton>
+          </div>
         </div>
-        <div className="grid md:grid-cols-3  gap-10">
-          <Card
-            className="w-full p-10 aspect-square space-y-10"
-            variant={"orange"}
-          > 
-            <div className="space-y-5">
-              <h2 className="text-5xl font-bold">Buttons</h2>
-              <p className="text-gray-500 text-2xl">Interactive button components with variants</p>
-            </div>
-            <ButtonDemo/>
-          </Card>
-          <Card
-            className="w-full aspect-square"
-            variant={"green"}
-          />
-          <Card
-            className="w-full aspect-square"
-            variant={"pink"}
-          />
-          <Card
-            className="w-full aspect-square"
-            variant={"default"}
-          />
-          <Card
-            className="w-full aspect-square"
-            variant={"purple"}
-          />
-          <Card
-            className="w-full aspect-square"
-            variant={"red"}
-          />
+        <div className="flex gap-5 flex-col w-full">
+          <NavBar/>
+          <div className="grid md:grid-cols-3  gap-10">
+            <ProjectProgress/>
+            <Card
+              className="w-full p-10 bg-green-400 aspect-square space-y-5"
+            > 
+              <div>
+
+              </div>
+            </Card>
+            <Card
+              className="w-full p-10 bg-yellow-400 aspect-square space-y-5"
+            > 
+              <div>
+
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
     </main>
