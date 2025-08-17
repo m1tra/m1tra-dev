@@ -14,7 +14,7 @@ type Props = { children: React.ReactNode }
 
 export default function Navbar({ children }: Props) {
   return (
-    <nav className="fixed inset-0 flex">
+    <nav className=" inset-0 flex">
       <SliceLogic position="left" />
       <div className="flex-1">{children}</div>
       <SliceLogic position="right" />
