@@ -50,7 +50,7 @@ export default function MobileNavBar() {
           <DrawerFooter className="w-full px-5 py-4">
             {/* Можно добавить кнопку выхода или что-то ещё */}
             <DrawerClose asChild>
-              <BrutalButton className="text-7xl uppercase h-auto px-5 font-black w-full  hover:bg-white hover:text-black" variant="default">
+              <BrutalButton className="text-6xl uppercase h-auto px-5 font-black w-full  hover:bg-white hover:text-black" variant="default">
                 Close
               </BrutalButton>
             </DrawerClose>
