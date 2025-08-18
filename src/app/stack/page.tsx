@@ -6,6 +6,7 @@ import NavBar from "@/components/components-page/navbar";
 import Card from "@/components/ui/brutal-ui/card";
 import ProjectProgress from "@/components/ui/examples/project-progress";
 import { cn } from "@/components/lib/utils";
+import TeamChat from "@/components/ui/examples/team-chat";
 
 
   
@@ -34,13 +35,7 @@ export default function Home() {
           <NavBar/>
           <div className="grid md:grid-cols-3  gap-10">
             <ProjectProgress/>
-            <Card
-              className="w-full p-10 bg-green-400 aspect-square space-y-5"
-            > 
-              <div>
-
-              </div>
-            </Card>
+            <TeamChat/>
             <Card
               className="w-full p-10 bg-yellow-400 aspect-square space-y-5"
             > 

@@ -1,8 +1,8 @@
 import { cn } from '@/components/lib/utils';
-import React, { forwardRef, HTMLAttributes } from 'react'
+import React, { forwardRef } from 'react'
 import { Button } from '../shadcn/button';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ComponentPropsWithoutRef<typeof Button> {
   variant?:"default" | "outline",
   className?:string,
   children:React.ReactNode
