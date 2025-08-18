@@ -41,7 +41,7 @@ export default function MobileNavBar() {
                   href={item.href}
                   className=""
                 >
-                    <BrutalButton className="text-7xl uppercase h-auto px-5 font-black w-full bg-violet-400 hover:bg-white hover:text-black">{item.title}</BrutalButton>
+                    <BrutalButton className="text-6xl uppercase h-auto px-5 font-black w-full bg-violet-400 hover:bg-white hover:text-black">{item.title}</BrutalButton>
                 </Link>
               </DrawerClose>
             ))}
