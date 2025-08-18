@@ -1,7 +1,4 @@
-import BrutalButton from "@/components/ui/brutal-ui/button";
-import NavBar from "@/components/components-page/navbar";
 import ProjectProgress from "@/components/ui/examples/project-progress";
-import { cn } from "@/components/lib/utils";
 import TeamChat from "@/components/ui/examples/team-chat";
 import FormExample from "@/components/ui/examples/auth";
 
