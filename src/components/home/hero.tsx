@@ -14,7 +14,7 @@ export default function Hero() {
         <div className='flex gap-10 pt-5 sm:flex-row flex-col'>
           <div className='flex md:justify-end lg:justify-center gap-5 flex-col items-start'>
             <h1 className='text-6xl uppercase font-black'>Hey, i&apos;m mitra</h1>
-            <div className="flex  justify-start sm:justify-center gap-4">
+            <div className="flex flex-wrap justify-start sm:justify-center gap-4">
               <Link href={"/stack"}>
                 <BrutalButton className="uppercase py-4 px-8" variant="default">
                   View layouts
