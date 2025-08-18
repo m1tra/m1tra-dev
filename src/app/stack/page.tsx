@@ -7,6 +7,7 @@ import Card from "@/components/ui/brutal-ui/card";
 import ProjectProgress from "@/components/ui/examples/project-progress";
 import { cn } from "@/components/lib/utils";
 import TeamChat from "@/components/ui/examples/team-chat";
+import FormExample from "@/components/ui/examples/auth";
 
 
   
@@ -36,13 +37,10 @@ export default function Home() {
           <div className="grid md:grid-cols-3  gap-10">
             <ProjectProgress/>
             <TeamChat/>
-            <Card
-              className="w-full p-10 bg-yellow-400 aspect-square space-y-5"
-            > 
-              <div>
-
-              </div>
-            </Card>
+            <FormExample/>
+            <ProjectProgress/>
+            <TeamChat/>
+            <FormExample/>
           </div>
         </div>
       </section>
