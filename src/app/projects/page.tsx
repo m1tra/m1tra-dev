@@ -4,19 +4,14 @@ import ProjectsList from "@/components/projects/projects-list"
 
 export default function Project() {
   return (
-    <main className="mt-20 px-10 font-mono ">
-      <div className="w-full flex  gap-5 min-h-[calc(100vh-100px)]">
-        <aside className=" flex flex-col space-y-5 w-96 sticky top-20 h-[calc(100vh-100px)]">
-          <Info />
-          <div className="border flex-1 flex items-center justify-center">
-            <ProjectData />
-          </div>
-        </aside>
-
-        <div className="flex-1">
-          <ProjectsList />
+    <main className="mt-20 px-10  ">
+      <section className="flex flex-col gap-5">
+        <h1 className="text-6xl font-extrabold uppercase">My projects</h1>
+        <span className="h-2 w-28 bg-black"></span>
+        <div className="mt-10">
+          <ProjectsList/>
         </div>
-      </div>
+      </section>
     </main>
   )
 }

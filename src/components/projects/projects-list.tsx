@@ -38,9 +38,9 @@ const projectsList:IProjects[] = [
 
 export default function ProjectsList() {
   return (
-    <div className='flex flex-col space-y-20 mb-5  '>
+    <div className='flex flex-col space-y-10 mb-5  '>
         {projectsList.map((project,index)=>(
-            <Project {...project} key={index}/>
+            <Project {...project} key={index} index={index}/>
         ))}
     </div>
   )
