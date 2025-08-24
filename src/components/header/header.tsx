@@ -8,7 +8,7 @@ export default function Header() {
     <motion.header
       initial={{
         top:"50%",
-        scale:2
+        scale:1.7
       }}
       animate={{
         top:2,
@@ -23,7 +23,7 @@ export default function Header() {
             initial={{pathLength:0}}
             animate={{pathLength:1}} 
             transition={{duration:0.3}}
-            d="M3 81V3H215V81H3Z" stroke="black" stroke-width="6"/>
+            d="M3 81V3H215V81H3Z" stroke="black" strokeWidth={5}/>
         </svg>
         </span>
       </div>
