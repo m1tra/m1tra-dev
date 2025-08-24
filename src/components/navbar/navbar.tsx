@@ -2,6 +2,7 @@
 import type React from "react"
 import type { LucideIcon } from "lucide-react"
 import SliceLogic from "./slice-logic"
+import { motion } from "motion/react"
 
 export interface SliceProps {
   href: string
@@ -14,10 +15,21 @@ type Props = { children: React.ReactNode }
 
 export default function Navbar({ children }: Props) {
   return (
-    <nav className=" inset-0 flex">
+    <motion.nav
+      className="flex"
+      initial={{
+        filter: "blur(10px)"
+      }}
+      animate={{
+        filter: "blur(0px)"
+      }}
+      transition={{
+        delay:0.9,
+      }}
+    >
       <SliceLogic position="left" />
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 ">{children}</div>
       <SliceLogic position="right" />
-    </nav>
+    </motion.nav>
   )
 }
