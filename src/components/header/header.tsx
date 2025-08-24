@@ -8,7 +8,7 @@ export default function Header() {
     <motion.header
       initial={{
         top:"50%",
-        scale:3
+        scale:2
       }}
       animate={{
         top:2,
