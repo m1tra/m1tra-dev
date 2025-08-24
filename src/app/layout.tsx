@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Navbar from "@/components/navbar/navbar";
 import MobileNavBar from "@/components/mobile-navbar.tsx/navbar";
+import ReactLenis from "lenis/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ReactLenis />
         <Header/>
         
         <Navbar>

@@ -14,7 +14,7 @@ export default function Header() {
         top:2,
         scale:1
       }} 
-      transition={{duration:0.3, delay:0.5, type:"spring"}}
+      transition={{duration:0.5, delay:0.5, type:"spring"}}
       className='fixed top-2 left-1/2 -translate-x-1/2 z-50'>
       <div className='text-5xl  font-bold font-mono uppercase text-center leading-snug   max-w-2xl'>
         <span className='  relative inline-block px-6 py-3 text-5xl'>MITRA
@@ -22,7 +22,7 @@ export default function Header() {
           <motion.path
             initial={{pathLength:0}}
             animate={{pathLength:1}} 
-            transition={{duration:0.3}}
+            transition={{duration:0.5}}
             d="M3 81V3H215V81H3Z" stroke="black" strokeWidth={5}/>
         </svg>
         </span>
