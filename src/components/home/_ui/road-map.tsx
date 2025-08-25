@@ -5,7 +5,7 @@ import StackIcons from "@/constants/stack-icon";
 
 export default function RoadMap() {
   return (
-    <div className="relative grid grid-cols-4 w-[400px]  gap-1 p-4  ">
+    <div className="relative grid grid-cols-3 sm:grid-cols-4 w-[400px]  gap-1   ">
       {StackIcons.map(({ title, tag, icon }) => {
         const Icon = icon;
         return (

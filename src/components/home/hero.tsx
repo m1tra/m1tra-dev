@@ -80,7 +80,7 @@ export default function Hero() {
               <Link href="https://leetcode.com/u/mitra-dev/"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/tg.svg'} fill alt="github" /></div></BrutalIconButton></Link>
             </div>
           </div>
-          <div className="relative   col-span-2 xl:col-span-1 ">
+          <div className="relative   col-span-2 xl:col-span-1 p-4 space-y-4">
             <h3 className='uppercase text-4xl font-bold'>My Stack</h3>
             <RoadMap/>
           </div>
