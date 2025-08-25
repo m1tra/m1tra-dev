@@ -1,5 +1,4 @@
-import ProjectData from "@/components/projects/_ui/project-data"
-import Info from "@/components/projects/info"
+
 import ProjectsList from "@/components/projects/projects-list"
 
 export default function Project() {

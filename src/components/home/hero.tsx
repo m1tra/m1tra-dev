@@ -1,13 +1,18 @@
+'use client'
+
 import React from 'react'
 import BrutalButton from '../ui/brutal-ui/button'
 import { cn } from '../lib/utils'
 import Link from 'next/link'
 import Image from "next/image";
 import BrutalIconButton from '../ui/brutal-ui/icon-button';
-import {  BookOpen, CalendarDays, Mail, MapPin } from 'lucide-react';
+import { BookOpen, CalendarDays, Mail, MapPin } from 'lucide-react';
+import { motion, useDragControls } from 'motion/react';
+import RoadMap from './_ui/road-map'
 
 
 export default function Hero() {
+  const controls = useDragControls()
   return (
     <section className="min-h-screen px-4 sm:px-10 md:px-20 lg:px-30 py-20">
       <div className='space-y-10'>
@@ -40,7 +45,7 @@ export default function Hero() {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative w-full'>
           <div className='border-4 border-black aspect-square w-full'>
-            
+
           </div>
           <div className='flex flex-col  gap-5 '>
             <h3 className='uppercase text-4xl font-bold'>Mitra</h3>
@@ -68,20 +73,16 @@ export default function Hero() {
               <p className='text-lg font-semibold'>Passionate fullstack developer with expertise in modern web technologies. I create clean, functional, and user-friendly interfaces that solve real problems.</p>
               <p className='text-lg font-semibold'>Always learning new technologies and staying up-to-date with the latest trends in web development and design.</p>
             </div>
-            
+
             <div className='flex gap-2'>
-              <Link href="https://leetcode.com/u/mitra-dev/"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/leetcode.svg'} fill alt="leetcode"/></div></BrutalIconButton></Link>
-              <Link href="https://github.com/m1tra"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/github.svg'} fill alt="github"/></div></BrutalIconButton></Link>
-              <Link href="https://leetcode.com/u/mitra-dev/"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/tg.svg'} fill alt="github"/></div></BrutalIconButton></Link>
+              <Link href="https://leetcode.com/u/mitra-dev/"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/leetcode.svg'} fill alt="leetcode" /></div></BrutalIconButton></Link>
+              <Link href="https://github.com/m1tra"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/github.svg'} fill alt="github" /></div></BrutalIconButton></Link>
+              <Link href="https://leetcode.com/u/mitra-dev/"><BrutalIconButton variant='outline' className='p-2 size-20'><div className='relative w-full h-full'><Image src={'/tg.svg'} fill alt="github" /></div></BrutalIconButton></Link>
             </div>
           </div>
-          <div className="relative w-full h-[222px] col-span-2 xl:col-span-1 mt-5">
-            <Image 
-              src="/stack.svg" 
-              alt="stack" 
-              fill 
-              className="object-contain w-full h-auto"
-            />
+          <div className="relative   col-span-2 xl:col-span-1 ">
+            <h3 className='uppercase text-4xl font-bold'>My Stack</h3>
+            <RoadMap/>
           </div>
         </div>
       </div>
